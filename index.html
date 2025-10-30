@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Editkaro — Cinematic Video Editing & Social Media</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="brand">Editkaro</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO (full-width video bg) -->
+  <section id="home" class="hero">
+    <video class="hero-video" autoplay muted playsinline loop>
+      <!-- Replace with your production intro video -->
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-cinematic-landscape-1223-large.mp4" type="video/mp4">
+      <!-- fallback poster -->
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="eyebrow">Editkaro · Social Media Marketing & Video Editing</div>
+      <h1 class="hero-title">We Turn Footage Into Cinema</h1>
+      <p class="hero-sub">Shorts • Long-form • Gaming • Football Edits • eCommerce Ads • Documentary • Color Grading • Anime • Ads</p>
+      <div class="hero-ctas">
+        <a href="#portfolio" class="btn primary">Explore Portfolio</a>
+        <a href="#contact" class="btn ghost">Start Your Project</a>
+      </div>
+    </div>
+
+    <div class="hero-fade"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about reveal">
+    <div class="container">
+      <h2 class="section-title">About Editkaro</h2>
+      <p class="lead">Editkaro is a creative agency blending storytelling, motion design and strategic social media content. We craft cinematic edits optimized for engagement and conversion.</p>
+
+      <div class="about-grid">
+        <div class="card about-card">
+          <h3>Our Craft</h3>
+          <p>Story-driven edits, refined pacing, thoughtful color grading and sound design that breathe life into your footage.</p>
+        </div>
+        <div class="card about-card">
+          <h3>Our Process</h3>
+          <p>Creative brief → rough-cut → feedback → polish → delivery — collaborative, deadline-focused, and quality-first.</p>
+        </div>
+        <div class="card about-card">
+          <h3>Why Editkaro</h3>
+          <p>Deep knowledge of platform formats (Reels/Shorts/YouTube), ad-driven edits, and creative storytelling that converts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section portfolio reveal">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <p class="lead">Hover to preview. Click a card to open the full video in your browser or download (replace links with your project pages).</p>
+
+      <!-- filter bar -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="shorts">Shorts</button>
+        <button class="filter-btn" data-filter="longform">Long-form</button>
+        <button class="filter-btn" data-filter="gaming">Gaming</button>
+        <button class="filter-btn" data-filter="football">Football</button>
+        <button class="filter-btn" data-filter="ecommerce">eCommerce</button>
+        <button class="filter-btn" data-filter="documentary">Documentary</button>
+        <button class="filter-btn" data-filter="grading">Color Grading</button>
+        <button class="filter-btn" data-filter="anime">Anime</button>
+        <button class="filter-btn" data-filter="ads">Ads</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- sample item: replace video src with your own hosted assets -->
+        <article class="portfolio-item card" data-category="shorts">
+          <div class="preview">
+            <video class="preview-video" muted loop playsinline>
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-waves-in-the-water-1164-large.mp4" type="video/mp4">
+            </video>
+            <div class="preview-overlay">
+              <button class="preview-open" data-src="https://assets.mixkit.co/videos/preview/mixkit-waves-in-the-water-1164-large.mp4" aria-label="Open project">Open</button>
+            </div>
+          </div>
+          <div class="meta">
+            <h3>Social Reel — Fast Cuts</h3>
+            <p class="meta-sub">Short-form vertical edit for engagement</p>
+            <div class="tags"><span>Shorts</span><span>Reels</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-item card" data-category="gaming">
+          <div class="preview">
+            <video class="preview-video" muted loop playsinline>
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-gaming-demon-in-a-dark-forest-38763-large.mp4" type="video/mp4">
+            </video>
+            <div class="preview-overlay">
+              <button class="preview-open" data-src="https://assets.mixkit.co/videos/preview/mixkit-gaming-demon-in-a-dark-forest-38763-large.mp4">Open</button>
+            </div>
+          </div>
+          <div class="meta">
+            <h3>Gaming Montage</h3>
+            <p class="meta-sub">Montage with sync cuts and audio stutter</p>
+            <div class="tags"><span>Gaming</span><span>Montage</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-item card" data-category="ecommerce">
+          <div class="preview">
+            <video class="preview-video" muted loop playsinline>
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-wristwatch-on-a-bed-of-black-powder-23611-large.mp4" type="video/mp4">
+            </video>
+            <div class="preview-overlay">
+              <button class="preview-open" data-src="https://assets.mixkit.co/videos/preview/mixkit-wristwatch-on-a-bed-of-black-powder-23611-large.mp4">Open</button>
+            </div>
+          </div>
+          <div class="meta">
+            <h3>Product Ad</h3>
+            <p class="meta-sub">eCommerce hero spot — motion tracked product</p>
+            <div class="tags"><span>eCommerce</span><span>Ads</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-item card" data-category="football">
+          <div class="preview">
+            <video class="preview-video" muted loop playsinline>
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-soccer-player-scoring-a-penalty-kick-38659-large.mp4" type="video/mp4">
+            </video>
+            <div class="preview-overlay">
+              <button class="preview-open" data-src="https://assets.mixkit.co/videos/preview/mixkit-soccer-player-scoring-a-penalty-kick-38659-large.mp4">Open</button>
+            </div>
+          </div>
+          <div class="meta">
+            <h3>Sports Highlights — Football</h3>
+            <p class="meta-sub">Slow-mo & dramatic color grade</p>
+            <div class="tags"><span>Football</span><span>Highlights</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-item card" data-category="longform">
+          <div class="preview">
+            <video class="preview-video" muted loop playsinline>
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-audience-in-a-concert-hall-34557-large.mp4" type="video/mp4">
+            </video>
+            <div class="preview-overlay">
+              <button class="preview-open" data-src="https://assets.mixkit.co/videos/preview/mixkit-audience-in-a-concert-hall-34557-large.mp4">Open</button>
+            </div>
+          </div>
+          <div class="meta">
+            <h3>Documentary Short — Teaser</h3>
+            <p class="meta-sub">Narrative pacing & ambience</p>
+            <div class="tags"><span>Documentary</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-item card" data-category="grading">
+          <div class="preview">
+            <video class="preview-video" muted loop playsinline>
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-sunset-over-a-stone-path-38764-large.mp4" type="video/mp4">
+            </video>
+            <div class="preview-overlay">
+              <button class="preview-open" data-src="https://assets.mixkit.co/videos/preview/mixkit-sunset-over-a-stone-path-38764-large.mp4">Open</button>
+            </div>
+          </div>
+          <div class="meta">
+            <h3>Color Grading Reel</h3>
+            <p class="meta-sub">Before/after mood showcase</p>
+            <div class="tags"><span>Color</span><span>Grade</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-item card" data-category="anime">
+          <div class="preview">
+            <video class="preview-video" muted loop playsinline>
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-animation-38766-large.mp4" type="video/mp4">
+            </video>
+            <div class="preview-overlay">
+              <button class="preview-open" data-src="https://assets.mixkit.co/videos/preview/mixkit-abstract-animation-38766-large.mp4">Open</button>
+            </div>
+          </div>
+          <div class="meta">
+            <h3>AMV — Anime Edit</h3>
+            <p class="meta-sub">Synchronized cuts & stylized effects</p>
+            <div class="tags"><span>Anime</span><span>AMV</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-item card" data-category="ads">
+          <div class="preview">
+            <video class="preview-video" muted loop playsinline>
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-young-woman-dancing-in-a-supermarket-38765-large.mp4" type="video/mp4">
+            </video>
+            <div class="preview-overlay">
+              <button class="preview-open" data-src="https://assets.mixkit.co/videos/preview/mixkit-young-woman-dancing-in-a-supermarket-38765-large.mp4">Open</button>
+            </div>
+          </div>
+          <div class="meta">
+            <h3>Brand Commercial</h3>
+            <p class="meta-sub">Story-driven ad with product focus</p>
+            <div class="tags"><span>Ads</span><span>Commercial</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services reveal">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="services-grid">
+        <div class="service card">
+          <h4>Professional Editing</h4>
+          <p>Precision cuts, pacing and narrative structure.</p>
+        </div>
+        <div class="service card">
+          <h4>Color Grading</h4>
+          <p>Creative looks, industry-grade color workflows.</p>
+        </div>
+        <div class="service card">
+          <h4>Audio & Sound Design</h4>
+          <p>Mixing, Foley and immersive soundscapes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact reveal">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="lead">Tell us about your project — we’ll reply within 48 hours.</p>
+
+      <form id="contactForm" class="contact-form">
+        <div class="grid-2">
+          <input name="name" type="text" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+        </div>
+        <select name="service" required>
+          <option value="">Choose service</option>
+          <option value="editing">Professional Editing</option>
+          <option value="color">Color Grading</option>
+          <option value="audio">Audio Enhancement</option>
+          <option value="motion">Motion Graphics</option>
+          <option value="vfx">VFX</option>
+          <option value="premium">Premium Package</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Project details..." required></textarea>
+        <button class="btn primary" type="submit">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>© <strong>Editkaro</strong> — All rights reserved.</div>
+        <div class="socials">
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional: open video in new tab fallback -->
+  <script src="script.js"></script>
+</body>
+</html>
